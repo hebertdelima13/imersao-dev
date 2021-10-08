@@ -117,6 +117,7 @@ $(document).ready(function() {
     //SCROLL SEÇÕES
 
     let nav = $('.nav-item');
+    let button = $('.button');
 
     let topoSection = $('#header');
     let infoSection = $('#informations');
@@ -134,6 +135,20 @@ $(document).ready(function() {
             scrollTo = infoSection
         } else if(btnId == 'recom-section') {
             scrollTo = recomSection
+        }
+        
+        $([document.documentElement, document.body]).animate ( {
+            scrollTop: $(scrollTo).offset().top - 150
+        }, 100);
+
+    })
+
+    $(button).click(function(){
+        
+        let btnId = $(this).attr('id');
+
+        if(btnId == 'info-section') {
+            scrollTo = infoSection
         }
         
         $([document.documentElement, document.body]).animate ( {
