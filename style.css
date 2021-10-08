@@ -1,0 +1,347 @@
+/*font-family: 'Montserrat', sans-serif;*/
+
+:root {
+    --fontM: 'Montserrat', sans-serif;
+    --orange: #ff4500;
+    --orangedark: #B93200;
+    --blue: #36357E;
+    --black: #303033;
+    --white: #fff;
+}
+
+/*HEADER*/
+
+#header .navbar-collapse {
+    flex-grow: 0;
+}
+
+#header .navbar-nav a {
+    font-family: var(--fontM);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-left: 2rem;
+} 
+
+#header .navbar-nav a:hover {
+    color: var(--orange);
+}
+
+#header .navbar-nav .agendamento {
+    border: 1px solid var(--orange);
+}
+
+#header .navbar-nav .agendamento:hover {
+    color: var(--white);
+    background: var(--orange);
+}
+
+/*topo*/
+
+#topo {
+    margin-top: 10rem;
+}
+
+#topo img {
+    box-shadow: 4px 4px 0px 0px var(--orange);
+    width: 100%;
+    height: 100%;
+}
+
+#topo h2 {
+    font-family: var(--fontM);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+#topo h1 {
+    font-family: var(--fontM);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+#topo p {
+    font-family: var(--fontM);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--orange);
+    margin-top: 1rem;
+}
+
+#topo .button {
+    width: 180px;
+    height: 40px;
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    margin-top: 1rem;
+}
+
+#topo .button:hover {
+    opacity: 0.9;
+}
+
+#topo .button a {
+    font-family: var(--fontM);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#topo .fa-info-circle {
+    margin-left: 0.2rem;
+}
+
+/*INFORMATIONS*/
+
+#informations {
+    margin-top: 7rem;
+}
+
+#informations .title {
+    margin-bottom: 2rem;
+}
+
+#informations .title h6 {
+    font-family: var(--fontM);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+#informations .title h1 {
+    font-family: var(--fontM);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+#informations .information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#informations i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--blue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#informations .information-desc h6 {
+    font-family: var(--fontM);
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--black);
+    margin: 0;
+}
+
+#informations .information-desc p{
+    font-family: var(--fontM);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+}
+
+/*INFORMATIONS COUNT*/
+
+#informations .circle-box  {
+    margin-left: 3rem;
+}
+
+#informations .progressbar-text {
+    font-family: var(--fontM);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#informations .count h6 {
+    font-family: var(--fontM);
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--black);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+#informations .count p {
+    color: var(--black);
+    text-align: center;
+    font-family: var(--fontM);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+/*RECOMENDAÇÕES*/
+
+#recommendations {
+    margin-top: 5rem;
+}
+
+#recommendations .title {    
+    margin-bottom: 2rem;
+}
+
+#recommendations .title h6 {
+    font-family: var(--fontM);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+#recommendations .title h1 {
+    font-family: var(--fontM);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--orange);
+}
+
+#recommendations .cards {
+    margin-bottom: 1rem;
+}
+
+#recommendations .card {
+    width: 100%;
+    height: 100%;
+    border-top: 0;
+    border-bottom: 3px solid var(--orange);
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+}
+
+#recommendations .card:hover {
+    transition: 0.2s;
+    transform: scale(105%);
+    border-bottom: 3px solid var(--black);
+}
+
+#recommendations .card i {
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+#recommendations .card h6 {
+    font-family: var(--fontM);
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+#recommendations .card p {    
+    font-family: var(--fontM);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+/*FOOTER*/
+
+#footer {
+    margin-top: 5rem;
+}
+
+#footer .container-fluid {
+    background: var(--black);    
+}
+
+#footer .logo img {
+    width: 150px;
+    height: 33px;
+}
+
+#footer p {
+    font-family: var(--fontM);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--white);
+    margin: 0;
+}
+
+#footer a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+#footer a:hover {
+    color: var(--orange);
+}
+
+/*MEDIAQUERIES*/
+
+@media (max-width: 575.98px) {
+
+    /*TOPO*/
+
+    #topo {
+        text-align: center;
+    }
+
+    #topo h2 {
+        margin-top: 2rem;
+    }
+    
+    #topo .button {
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    /*COUNT*/
+
+    #informations .circle-box {
+        margin: auto;
+    }
+
+    #informations .circle-box svg {
+        height: 150px;
+    }
+
+    /*RECOMMENDATIONS*/
+
+    #recommendations .title h1 {
+        font-size: 2.4rem;
+    }
+
+    /*FOOTER*/
+
+    #footer .logo, .direitos {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {  
+   
+    #header .navbar-nav a {
+        margin: 0;
+    }
+
+    #header .nav-link.agendamento {
+        border: none;
+        color: var(--orange);
+    }
+
+    #header .nav-link.agendamento:hover {
+        text-decoration: underline;
+        background: none;
+        color: var(--orange);
+        opacity: 0.8;
+    }
+}

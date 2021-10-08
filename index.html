@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--GOOGLEFONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/img/logoicon.png">
+    <title>Fcamara</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="https://fcamara.com.br/"><img src="./assets/img/logofcamara.png"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li id="home" class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li id="info-section" class="nav-item">
+                                <a class="nav-link" href="#informacoes">Informações</a>
+                            </li>
+                            <li id="recom-section" class="nav-item">
+                                <a class="nav-link" href="#recomendacoes">Recomendações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link agendamento" href="http://www.fcamara.com.br" target="_blank">Agendamento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div id="topo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/img/office.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <h2>#sanguelaranjas</h2>
+                        <h1>Nosso QG está de volta!!!</h1>
+                        <p>Seguindo todos os protocolos de segurança, para que seu retorno seja o mais seguro possível!
+                        </p>
+                        <button class="button"><a href="#informacoes">MAIS INFORMAÇÕES <i
+                                    class="fas fa-info-circle"></i></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--//HEADER-->
+
+    <!--MAIN-->
+    <main>
+        <div id="informations">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 title text-center">
+                            <h6>INFORMAÇÕES</h6>
+                            <h1>Acompanhe aqui as informações atuais do funcionamento dos nossos QGs</h1>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+
+                            <div class="information">
+                                <div class="information-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="information-desc">
+                                    <h6>HORÁRIOS</h6>
+                                    <p>Os escritórios voltarão a ficar abertos no horário das 8h às 18h.</p>
+                                </div>
+                            </div>
+
+                            <div class="information">
+                                <div class="information-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="information-desc">
+                                    <h6>ESCRITÓRIOS</h6>
+                                    <p>Nós temos 2 escritórios: um em São Paulo (principal) e outro em Santos (filial).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="information">
+                                <div class="information-icon">
+                                    <i class="fas fa-people-arrows"></i>
+                                </div>
+                                <div class="information-desc">
+                                    <h6>CAPACIDADE</h6>
+                                    <p>Os escritórios só podem comportar até 40% dos consultores, conforme a legislação.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <div class="count">
+                                <div class="row justify-content-center align-items-center text-center">
+                                    <div class="col-md-3 circle-box text-center">
+                                        <div id="circleA"></div>
+                                        <h6>CAPACIDADE ATUAL</h6>
+                                        <p>São Paulo</p>
+                                    </div>
+
+                                    <div class="col-md-3 circle-box text-center">
+                                        <div id="circleB"></div>
+                                        <h6>UTILIZAÇÃO ATUAL</h6>
+                                        <p>São Paulo</p>
+                                    </div>
+
+
+                                    <div class="col-md-3 circle-box text-center">
+                                        <div id="circleC"></div>
+                                        <h6>CAPACIDADE ATUAL</h6>
+                                        <p>Santos</p>
+                                    </div>
+
+                                    <div class="col-md-3 circle-box text-center">
+                                        <div id="circleD"></div>
+                                        <h6>UTILIZAÇÃO ATUAL</h6>
+                                        <p>Santos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="recommendations">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 title text-center">
+                            <h6>RECOMENDAÇÕES</h6>
+                            <h1>Siga com atenção as recomendações</h1>
+                        </div>
+
+                        <div class="col-md-4 text-center cards">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-thermometer-three-quarters"></i>
+                                    <h6 class="card-title">
+                                        Temperatura
+                                    </h6>
+                                    <p class="card-text">
+                                        Será medida a temperatura de todos os #sanguelaranjas ao chegar no escritório.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center cards">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-head-side-mask"></i>
+                                    <h6 class="card-title">
+                                        Máscara
+                                    </h6>
+                                    <p class="card-text">
+                                        Todos os #sanguelaranjas deverão usar máscaras dentro das acomodações dos
+                                        escritórios.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center cards">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-sticky-note"></i>
+                                    <h6 class="card-title">
+                                        Indicação
+                                    </h6>
+                                    <p class="card-text">
+                                        Nas mesas existem adesivos sinalizando onde os #sanguelaranjas devem sentar,
+                                        para que haja o distanciamento necessário.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center cards">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <h6 class="card-title">
+                                        Agendamento
+                                    </h6>
+                                    <p class="card-text">
+                                        O retorno ao escritório só é possível através de um sistema de agendamento, onde
+                                        os #sanguelaranjas poderão optar qual escritório ir, além de escolher data e
+                                        também a estação de trabalho demarcada com um número.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center cards">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-home"></i>
+                                    <h6 class="card-title">
+                                        Sintomas
+                                    </h6>
+                                    <p class="card-text">
+                                        Pessoas que estiverem sentindo alguns dos sintomas não devem ir trabalhar
+                                        presencialmente, a indicação é para que permaneçam em casa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center cards">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-bell"></i>
+                                    <h6 class="card-title">
+                                        #sanguelaranjas
+                                    </h6>
+                                    <p class="card-text">
+                                        Voltar aos escritórios é algo opcional! Ou seja, para quem ainda não se
+                                        sente à vontade para ir, ou mora fora das regiões onde estão os escritórios, irá
+                                        permanecer em casa. Segurança em primeiro lugar!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--//MAIN-->
+
+    <!--FOOTER-->
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-4 logo d-flex align-items-center justify-content-center">
+                        <a href="http://www.fcamara.com.br"><img src="./assets/img/logofcamarafooter.png"
+                                alt="Logo Fcamara Footer"></a>
+                    </div>
+                    <div class="col-md-4 direitos text-center">
+                        <p>© 2021 FCamara Formação e Consultoria.
+                            <br>Todos os direitos reservados.
+                        </p>
+                    </div>
+                    <div class="col-md-4 sociais d-flex align-items-center justify-content-center">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//FOOTER-->
+
+    <!--SCRIPT-->
+    <script src="script.js"></script>
+    <!--PROGRESSBAR-->
+    <script src="progressbar.min.js"></script>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
